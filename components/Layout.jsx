@@ -1,13 +1,5 @@
 const Layout = ({ children }) => {
-  return (
-    <>
-      <header>
-        <h1>header</h1>
-      </header>
-      {children}
-      <footer>footer</footer>
-    </>
-  );
+  return <>{children}</>;
 };
 
 export default Layout;
