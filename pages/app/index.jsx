@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Background from '../../components/Background';
@@ -13,6 +14,9 @@ import { Container } from '../../styles/globals.style';
 const LaunchApp = () => {
   return (
     <>
+      <Head>
+        <title>Launch App | 3swappdex</title>
+      </Head>
       <Background>
         <Container mxWidth="lg">
           <AppHeader>
