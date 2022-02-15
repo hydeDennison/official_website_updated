@@ -9,7 +9,6 @@ position: sticky;
 top: 0;
 z-index: 999;
 padding: 10px 72px;
-background: #FFFFFF;
 display: flex;
 align-items: center;
 justify-content: space-between;

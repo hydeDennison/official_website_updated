@@ -5,19 +5,20 @@ import Back from '../assets/bg.png'
 
 const Container = styled.div`
 margin:0;
-padding: 30px 0;
+
+
 /* background-color: yellow; */
-background-image: url(${Back});
-background-position: top 30% right ;
+/* background-image: url(${Back}); 
+background-position: top 0% right ;
 background-repeat: no-repeat;
-background-blend-mode: lighten;
+background-blend-mode: lighten; */
 display: flex;
 align-items:center;
 justify-content: space-between;
 
 @media screen and (max-width: 800px){
     background-position: top 30% right 30%;
-/* flex-direction: column; */
+
 }
 @media screen and (max-width: 700px){
     background-position: top 30% right 50%;
@@ -139,7 +140,7 @@ line-height: 24px;
 color: #FFFFFF;
 outline: none;
 border: none;
-cursor:pointer;
+cursor: pointer;
 
 @media screen and (max-width:900px){
     padding: 10px  15px;
