@@ -4,19 +4,15 @@ import Coin from '../assets/coin.png'
 import Back from '../assets/bg.png'
 
 const Container = styled.div`
-margin:0;
+padding-top:70px;
 
-
-/* background-color: yellow; */
-/* background-image: url(${Back}); 
-background-position: top 0% right ;
-background-repeat: no-repeat;
-background-blend-mode: lighten; */
 display: flex;
 align-items:center;
 justify-content: space-between;
 
 @media screen and (max-width: 800px){
+    padding-top:30px;
+
     background-position: top 30% right 30%;
 
 }
