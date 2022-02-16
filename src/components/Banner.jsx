@@ -1,7 +1,7 @@
 import React from 'react';
 import Coin from '../assets/coin.png';
 import { Column, Container, Typography } from '../GlobalStyle.style';
-import { BannerWrapper, ImageWrapper } from '../style/Banner.style';
+import { BannerWrapper, ImageWrapper } from '../styles/Banner.style';
 import Image from './Image';
 import Button from './Button';
 
@@ -16,6 +16,7 @@ const Banner = () => {
               fontSize="60px"
               lineHeight="70px"
               color="rgba(0,0,0,0.8)"
+              margin="30px 0 0 0"
             >
               One-Click, More Swaps, Less Fees.
             </Typography>

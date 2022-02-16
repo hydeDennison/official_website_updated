@@ -7,6 +7,7 @@ const StyledButton = styled.button`
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius : '5px'};
   cursor: pointer;
+  width: ${(props) => (props.width ? props.width : '')};
   display: ${(props) => (props.display ? props.display : 'flex')};
   font-size: ${(props) => (props.fontSize ? props.fontSize : '12px')};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : '15px')};

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Column, Container, Typography } from '../GlobalStyle.style';
-import { AboutWrapper } from '../style/About.style';
+import { AboutWrapper } from '../styles/About.style';
 
 const About = () => {
   return (

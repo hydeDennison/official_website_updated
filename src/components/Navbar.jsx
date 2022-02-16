@@ -5,19 +5,13 @@ import Logo from '../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
 
 const Container = styled.div`
-  position: sticky;
-  top: 0;
   z-index: 999;
   padding: 10px 72px;
-  background: rgba(255, 255, 255, 0.3);
+  background: ${(bg) => (bg ? bg : 'rgba(255, 255, 255, 0.3)')};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
-
-  @media screen and (max-width: 900px) {
-    padding: 10px 20px;
-  }
+  // box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
 `;
 const Div1 = styled.div``;
 const LogoWrap = styled(Link)``;
@@ -77,9 +71,9 @@ const Div3 = styled.div`
   }
 `;
 
-function Navbar() {
+function Navbar({ bg }) {
   return (
-    <Container>
+    <Container bg={bg}>
       <Div1>
         <LogoWrap to="/">
           <Log src={Logo} />

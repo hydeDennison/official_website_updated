@@ -1,6 +1,6 @@
 import React from 'react';
 import { Column, Container, Typography } from '../GlobalStyle.style';
-import { FeatureHeading, FeaturesWrapper } from '../style/Features.style';
+import { FeatureHeading, FeaturesWrapper } from '../styles/Features.style';
 import { FiExternalLink } from 'react-icons/fi';
 import {
   FaDiscord,

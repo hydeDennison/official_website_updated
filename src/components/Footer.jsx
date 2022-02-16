@@ -2,7 +2,7 @@ import React from 'react';
 import { Column, Container } from '../GlobalStyle.style';
 import NavLink from './NavLink';
 import { FiExternalLink } from 'react-icons/fi';
-import { FooterWrapper } from '../style/Footer.style';
+import { FooterWrapper } from '../styles/Footer.style';
 const Footer = () => {
   return (
     <>
