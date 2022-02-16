@@ -5,21 +5,24 @@ import Input from '../components/Input';
 import Modal from '../components/Modal';
 import Navbar from '../components/Navbar';
 import { Container, Typography } from '../GlobalStyle.style';
+import Confirmation from '../screens/Confirmation';
 import GetCode from '../screens/GetCode';
 import { DemoAppContainer } from '../styles/App.style';
 
 const Demo = () => {
   const [open, setOpen] = useState(false);
-  const [complete, setComplete] = useState(true);
+  const [complete, setComplete] = useState(false);
 
   return (
     <>
       <Navbar bg="transparent" />
+      {/* Get Test Code Modal */}
       <Modal open={open} width="800px" height="auto" bg="rgba(255,255,255,0.9)">
         <GetCode setOpen={setOpen} />
       </Modal>
+      {/* Confirmation Modal */}
       <Modal open={complete} height="auto" bg="rgba(255,255,255,0.9)">
-        <GetCode setOpen={setComplete} />
+        <Confirmation setComplete={setComplete} />
       </Modal>
       <Background>
         <Container>

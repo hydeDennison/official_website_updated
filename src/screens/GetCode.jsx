@@ -11,7 +11,7 @@ import {
 } from '../styles/GetCode.style';
 import { FaTimes } from 'react-icons/fa';
 
-const GetCode = ({ setOpen }) => {
+const GetCode = ({ setOpen, setComplete }) => {
   return (
     <>
       <GetCodeWrapper>
@@ -58,6 +58,7 @@ const GetCode = ({ setOpen }) => {
                 label="Get Test Code"
                 bgColor="var(--primary-bg)"
                 color="#fff"
+                onClick={() => setComplete(false)}
               />
             </GetCodeForm>
           </Column>
