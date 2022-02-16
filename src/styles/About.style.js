@@ -3,7 +3,8 @@ import { Column, Typography } from '../GlobalStyle.style';
 
 export const AboutWrapper = styled.div`
   width: 100%;
-  min-height: 90vh;
+  height: 100%;
+  margin-bottom: 100px;
   display: flex;
 
   ${Column} {
@@ -19,6 +20,17 @@ export const AboutWrapper = styled.div`
           max-width: 43ch;
           margin: 20px 0px 0px 5px;
         }
+      }
+    }
+    &:last-child {
+      position: relative;
+      img {
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        left: -40px;
+        top: -20px;
+        object-fit: contain;
       }
     }
   }

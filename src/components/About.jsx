@@ -1,6 +1,8 @@
 import React from 'react';
 import { Column, Container, Typography } from '../GlobalStyle.style';
 import { AboutWrapper } from '../styles/About.style';
+import Bar from '../assets/bar.png';
+import Image from './Image';
 
 const About = () => {
   return (
@@ -38,7 +40,9 @@ const About = () => {
               provision of liquidity for three tokens.
             </Typography>
           </Column>
-          <Column></Column>
+          <Column>
+            <Image src={Bar} alt="coin" />
+          </Column>
         </AboutWrapper>
       </Container>
     </>

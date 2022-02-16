@@ -28,6 +28,32 @@ export const BannerWrapper = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    //Mobile devices
+    background: green;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    //iPads, Tablets
+    background: yellow;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    //Small screens, laptops
+    background: purple;
+    width: 100%;
+    flex-direction: column;
+    /* padding: 0 10px; */
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    //Desktops, large screens
+    background: gray;
+  }
 `;
 
 export const ImageWrapper = styled.div``;

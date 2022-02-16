@@ -4,6 +4,7 @@ import { Column, Container, Typography } from '../GlobalStyle.style';
 import { BannerWrapper, ImageWrapper } from '../styles/Banner.style';
 import Image from './Image';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -29,13 +30,15 @@ const Banner = () => {
               {' '}
               Decentralized exchange with extra powers. Swap two tokens for one.
             </Typography>
-            <Button
-              label="Launch App"
-              bgColor="#4500a0"
-              color="#fff"
-              borderRadius="15px"
-              padding="13px 25px"
-            />
+            <Link to="/app">
+              <Button
+                label="Launch App"
+                bgColor="#4500a0"
+                color="#fff"
+                borderRadius="15px"
+                padding="13px 25px"
+              />
+            </Link>
           </Column>
           <Column>
             <ImageWrapper>
