@@ -2,7 +2,7 @@ import React from 'react';
 import { Column, Container, Typography } from '../GlobalStyle.style';
 import { AboutWrapper } from '../styles/About.style';
 import Bar from '../assets/bar.png';
-import Image from './Image';
+import Image from '../components/Image';
 
 const About = () => {
   return (
@@ -15,21 +15,23 @@ const About = () => {
               fontSize="31px"
               fontWeght="600"
               lineHeight="62px"
+              color="#121E49"
             >
               About Us
             </Typography>
             <Typography
               as="h1"
               fontSize="60px"
-              fontWeght="600"
+              fontWeght="bold"
               lineHeight="61px"
+              heading
               color="var(--primary-bg)"
             >
-              What we are Building
+              What we are Building.
             </Typography>
             <Typography
               as="p"
-              color="rgba(0,0,0,0.5)"
+              color="rgba(31, 31, 31, 0.7)"
               lineHeight="26px"
               fontSize="16px"
             >

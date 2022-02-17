@@ -2,8 +2,8 @@ import React from 'react';
 import Coin from '../assets/coin.png';
 import { Column, Container, Typography } from '../GlobalStyle.style';
 import { BannerWrapper, ImageWrapper } from '../styles/Banner.style';
-import Image from './Image';
-import Button from './Button';
+import Image from '../components/Image';
+import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -11,21 +11,23 @@ const Banner = () => {
     <>
       <Container>
         <BannerWrapper>
+          <div className="bg"></div>
           <Column flex="0.6">
             <Typography
               as="h1"
-              fontSize="60px"
+              fontSize="55px"
               lineHeight="70px"
-              color="rgba(0,0,0,0.8)"
-              margin="30px 0 0 0"
+              color="#fff"
+              heading
             >
               One-Click, More Swaps, Less Fees.
             </Typography>
             <Typography
               as="p"
-              fontSize="16px"
+              fontSize="20px"
+              letterSpacing="0.065em"
               lineHeight="26px"
-              color="rgba(0,0,0,0.5)"
+              color="rgba(255,255,255,1)"
             >
               {' '}
               Decentralized exchange with extra powers. Swap two tokens for one.
@@ -33,9 +35,10 @@ const Banner = () => {
             <Link to="/app">
               <Button
                 label="Launch App"
-                bgColor="#4500a0"
+                bgColor="#000"
                 color="#fff"
-                borderRadius="15px"
+                borderRadius="0px"
+                margin="20px 0"
                 padding="13px 25px"
               />
             </Link>

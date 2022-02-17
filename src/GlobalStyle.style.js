@@ -6,14 +6,29 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing:border-box;
   }
+  @font-face {
+   font-family: "Kinn";
+   src:local('Kinn'), url("./assets/Kinn-Bold.otf") format("otf");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Bold.ttf") format("truetype");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Medium.otf") format("otf");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Medium.ttf") format("truetype");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Regular.otf") format("oft");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Regular.ttf") format("truetype");
+};
   :root{
-    --primary-bg:#4500A0
+    --primary-bg:#4500A0;
+    --text-bg:#121E49;
+    --text-bg-p:#1F1F1F
   }
   body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins','Kinn' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+a{
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
 }
 `;
 
@@ -38,6 +53,7 @@ export const Typography = styled.h1`
   font-style: ${(props) => (props.fontStyle ? props.fontStyle : 'normal')};
   color: ${(props) => (props.color ? props.color : '#121212')};
   margin: ${(props) => (props.margin ? props.margin : '')};
+  font-family: ${(props) => (props.heading ? 'Kinn' : 'Poppins')}; ;
 `;
 
 export default GlobalStyle;

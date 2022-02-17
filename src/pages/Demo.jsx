@@ -57,7 +57,7 @@ const Demo = () => {
               color="var(--primary-bg)"
               onClick={() => setOpen(!open)}
             >
-              Continue to App
+              Get testing code
             </Typography>
           </DemoAppContainer>
         </Container>

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Logo from '../assets/logo.png';
-import { FaBars } from 'react-icons/fa';
+import Logo from '../assets/logo_1.png';
+import Button from './Button';
+import NavLink from './NavLink';
 
 const Container = styled.div`
   z-index: 999;
@@ -11,6 +12,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(1px);
   // box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
 `;
 const Div1 = styled.div``;
@@ -29,47 +31,6 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-const NavLinks = styled(Link)`
-  margin-left: 37px;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: poppins;
-  line-height: 24px;
-  font-weight: 500;
-  color: #121e49bf;
-  font-style: normal;
-
-  &:hover {
-    color: #4500a0;
-  }
-`;
-const SpecNavLink = styled(Link)`
-  margin-left: 37px;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: poppins;
-  line-height: 24px;
-  font-weight: 500;
-  background: #4500a0;
-  border-radius: 40px;
-  color: #ffffff;
-  padding: 7px 15px;
-  font-style: normal;
-`;
-
-const Div3 = styled.div`
-  display: none;
-  color: #4500a0;
-  transition: all ease-out 1000ms;
-  cursor: pointer;
-
-  @media screen and (max-width: 900px) {
-    display: block;
-  }
-  .icon {
-    font-size: 25px;
-  }
-`;
 
 function Navbar({ bg }) {
   return (
@@ -81,15 +42,20 @@ function Navbar({ bg }) {
       </Div1>
       <Div2>
         <NavMenu>
-          <NavLinks to="#">About Us</NavLinks>
-          <NavLinks to="#">Features</NavLinks>
-          <NavLinks to="#">White paper</NavLinks>
-          <SpecNavLink to="#">Launch App</SpecNavLink>
+          <NavLink url="/" label="About Us" />
+          <NavLink url="/" label="Features" />
+          <NavLink url="/" label="White paper" />
+          <Link to="/app">
+            <Button
+              label="Launch App"
+              borderRadius="0px"
+              color="#fff"
+              bgColor="#000"
+              margin="0px 10px"
+            />
+          </Link>
         </NavMenu>
       </Div2>
-      <Div3>
-        <FaBars className="icon" />
-      </Div3>
     </Container>
   );
 }

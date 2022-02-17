@@ -1,5 +1,24 @@
 import styled from 'styled-components';
 import { Column } from '../GlobalStyle.style';
+import Bg from '../assets/linear_bg_2.svg';
+export const FeatureWrapper = styled.section`
+  /* background: url(${Bg}) no-repeat;
+  background-position: right;
+  background-size: contain; */
+  position: relative;
+  &::before {
+    content: '';
+    background: #bc29e0;
+    width: 100px;
+    border-bottom-left-radius: 80%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+
+    filter: blur(90px);
+  }
+`;
+
 export const FeaturesWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -9,14 +28,19 @@ export const FeaturesWrapper = styled.div`
 
   ${Column} {
     .feature {
-      border: 1px solid #eee;
+      border: 1px solid var(--text-bg-p);
       min-height: 140px;
       margin-bottom: 15px;
       padding: 20px 30px;
-      border-radius: 25px;
-
+      border-radius: 15px;
       p {
         max-width: 40ch;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 40px;
       }
     }
   }
@@ -27,17 +51,21 @@ export const FeatureHeading = styled.div`
   padding: 30px 40px;
   border-radius: 30px;
   margin-right: 30px;
-  border: 1.5px solid #eee;
+  border: 1px solid var(--text-bg-p);
   box-sizing: border-box;
   position: relative;
-  border-radius: 25px;
+
+  border-radius: 15px;
 
   h1 {
     margin-top: 20px;
+    &::first-letter {
+      margin-left: -5px;
+    }
   }
   p {
     max-width: 400px;
-    margin: 20px 0;
+    margin-top: 40px;
   }
   .social__links {
     display: flex;

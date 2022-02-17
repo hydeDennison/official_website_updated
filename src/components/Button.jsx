@@ -18,6 +18,7 @@ const StyledButton = styled.button`
     props.textTransform ? props.textTransform : 'capitalize'};
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'center')};
   font-weight: ${(props) => (props.fontWeight ? props.fontWeight : '500')};
+  margin: ${(props) => (props.margin ? props.margin : '')};
   transition: all 300ms ease-out;
   .icon {
     font-size: 20px;
