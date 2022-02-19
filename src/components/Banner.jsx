@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Coin from '../assets/coin.png'
-import Back from '../assets/bg.png'
+import Lin from '../assets/linear2.png'
 
 const Container = styled.div`
 padding-top:70px;
@@ -31,6 +31,7 @@ padding: 70px 72px;
 
 `
 const BigT = styled.div` 
+    color: #FFFFFF;
 font-family: Poppins;
 font-size: 60px;
 font-style: normal;
@@ -39,31 +40,13 @@ line-height: 80px;
 letter-spacing: 0em;
 text-align: left;
 
-br{
-
-    @media screen and (max-width: 600px){
-    display:none;
-}
-}
-@media screen and (max-width: 1300px){
-    font-size: 45px;
-
-}
-@media screen and (max-width: 800px){
-    color: #FFFFF;
-}
-
-@media screen and (max-width: 900px){
-    font-size: 35px;
-    line-height: 50px;
-    color: #000000;
-    /* text-align: center; */
 
 
-}
 
 `
 const SmallT = styled.div` 
+color:  #FFFFFF;
+;
 margin-top:20px;
 font-family: Poppins;
 font-size: 24px;
@@ -91,34 +74,14 @@ display:none;
 `
 const Div2 = styled.div` 
     margin-right: 50px;
+background-image: url(${Lin});
 
 
 
-@media screen and (max-width: 900px){
-/* display:none; */
-}
-
-@media screen and (max-width: 770px){
-
-margin: 0;/* height: 400px; */
-}
-}
 `
 const CoinImg = styled.img`
 
-@media screen and (max-width: 1200px){
-    width: 300px;
 
-}
-
-@media screen and (max-width: 1024px){
-width: 400px
-}
-
-@media screen and (max-width: 800px){
-width: 270px
-}
-}
 
 `
 

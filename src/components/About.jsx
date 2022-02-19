@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Bg from '../assets/backg.png';
+import CandleStick from '../assets/candlestick.png';
 import Box from '../assets/box.png';
 import Ether from '../assets/ether.png';
 import Solid from '../assets/solid.png';
@@ -40,16 +41,9 @@ const Con = styled.div`
 
 
 `
-const Shad1Con = styled.img`
-    width: 120px;
-position: relative;
-
-
-@media screen and (max-width: 900px){
-    top: -1360px
-    left: -40px;
-}
-    
+const CandleCon = styled.img`
+   
+margin-right: 50px; 
 `
 const Shad2Con = styled.img`
 position: relative;
@@ -146,7 +140,10 @@ function About() {
             </Div1>
             <Div2>
                <Con>
-                                  <Shad2Con  src={Shad2}/>
+
+
+                                   <CandleCon  src={CandleStick}/>
+                                  {/* <Shad2Con  src={Shad2}/>
 
                <EtherCon src={Ether}/> 
                <Shad3Con  src={Shad3}/>
@@ -154,7 +151,7 @@ function About() {
                <BlueCon src={Box}/> 
                <Shad1Con  src={Shad1}/>
 
-               <SolidCon src={Solid}/> 
+               <SolidCon src={Solid}/>  */}
 
 
                </Con>

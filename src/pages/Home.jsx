@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import About from '../components/About';
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
-import Back from '../assets/bg.png'
+import Back from '../assets/linear1.png'
 import Features from '../components/Features';
 
 const Container = styled.div` 
 width: 100%;
 background-image: url(${Back});
-background-position:   right 0% ;
+background-position:   left 0% ;
+background-size: auto ;
 background-repeat: no-repeat;
-background-blend-mode: lighten;
 
 
 
