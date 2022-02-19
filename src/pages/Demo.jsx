@@ -3,7 +3,6 @@ import Background from '../components/Background';
 import Button from '../components/Button';
 import Input from '../components/Input';
 import Modal from '../components/Modal';
-import Navbar from '../components/Navbar';
 import { Container, Typography } from '../GlobalStyle.style';
 import Confirmation from '../screens/Confirmation';
 import GetCode from '../screens/GetCode';
@@ -15,7 +14,6 @@ const Demo = () => {
 
   return (
     <>
-      <Navbar bg="transparent" />
       {/* Get Test Code Modal */}
       <Modal open={open} width="800px" height="auto" bg="rgba(255,255,255,0.9)">
         <GetCode setOpen={setOpen} />

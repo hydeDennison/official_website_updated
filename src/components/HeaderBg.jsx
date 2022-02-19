@@ -1,57 +1,41 @@
 import styled from 'styled-components';
+import { Bg_desktop } from '../assets';
 const BackgroundWrapper = styled.div`
   width: 100%;
+  min-height: 90vh;
   position: relative;
+  background: url(${Bg_desktop}) no-repeat;
+  background-size: contain;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
 
-  .bg {
-    position: absolute;
-    filter: blur(70px);
-    &:nth-child(1) {
-      background: linear-gradient(180deg, #4500a0 0%, #9e00ff 100%);
-      width: 600px;
-      height: 90vh;
-      left: 10px;
-    }
-    &:nth-child(2) {
-      background: #bc29e0;
-      width: 300px;
-      height: 300px;
-      top: -30px;
-    }
-    &:nth-child(3) {
-      background: #fce8a5;
-      width: 300px;
-      height: 300px;
-      top: -30px;
-      left: 450px;
-    }
-    &:nth-child(4) {
-      background: #ffd549;
-      width: 200px;
-      height: 300px;
-      top: 200px;
-      left: 400px;
-    }
-    &:nth-child(5) {
-      background: #4500a0;
-      width: 300px;
-      height: 200px;
-      top: 40vh;
-      left: 80px;
-    }
+  //Galaxy S9/S9+ 360x740 || iPhone 8, 7, 6S, 6 375x667
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    filter: unset;
+    background-size: cover;
+    background-position: 40% 100%;
+  }
+  // 393x786 411x731 414x736
+  @media screen and (min-width: 376px) and (max-width: 480px) {
+    background-size: cover;
+    background-position: 40% 100%;
+    filter: unset;
+  }
+  //iPad 768x1024
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-size: cover;
+    background-position: 40% 100%;
+    filter: unset;
+  }
+  // Medium Screen 1024x800
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    background-size: cover;
+    filter: unset;
   }
 `;
 const Background = ({ children }) => {
   return (
     <>
-      <BackgroundWrapper>
-        <div className="bg"></div>
-        <div className="bg"></div>
-        <div className="bg"></div>
-        <div className="bg"></div>
-        <div className="bg"></div>
-        {children}
-      </BackgroundWrapper>
+      <BackgroundWrapper>{children}</BackgroundWrapper>
     </>
   );
 };

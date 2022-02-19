@@ -5,6 +5,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   width: 100%;
   padding-bottom: 30px;
+  flex-wrap: wrap;
   ${Column} {
     display: flex;
   }
@@ -30,6 +31,11 @@ export const FooterWrapper = styled.div`
         content: '';
         border-right: none;
       }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    a {
+      font-size: 10px;
     }
   }
 `;

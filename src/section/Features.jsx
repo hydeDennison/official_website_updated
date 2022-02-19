@@ -14,7 +14,7 @@ import {
 } from 'react-icons/fa';
 import NavLink from '../components/NavLink';
 
-function Features() {
+const Features = () => {
   return (
     <>
       <FeatureWrapper>
@@ -139,6 +139,6 @@ function Features() {
       </FeatureWrapper>
     </>
   );
-}
+};
 
 export default Features;

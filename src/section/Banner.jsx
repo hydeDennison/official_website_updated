@@ -11,11 +11,10 @@ const Banner = () => {
     <>
       <Container>
         <BannerWrapper>
-          <div className="bg"></div>
           <Column flex="0.6">
             <Typography
               as="h1"
-              fontSize="55px"
+              fontSize="58px"
               lineHeight="70px"
               color="#fff"
               heading
