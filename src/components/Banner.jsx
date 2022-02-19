@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Coin from '../assets/coin.png'
-import Lin from '../assets/linear2.png'
 
 const Container = styled.div`
 padding-top:70px;
@@ -24,6 +23,7 @@ flex-direction: column;
 `
 const Div1 = styled.div` 
 padding: 70px 72px;
+z-index: 999;
 
 @media screen and (max-width: 900px){
     padding: 20px;
@@ -73,8 +73,8 @@ display:none;
 
 `
 const Div2 = styled.div` 
-    margin-right: 50px;
-background-image: url(${Lin});
+    padding-right: 50px;
+z-index: 999;
 
 
 

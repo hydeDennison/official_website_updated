@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Bg from '../assets/backg.png';
 import CandleStick from '../assets/candlestick.png';
-import Box from '../assets/box.png';
-import Ether from '../assets/ether.png';
-import Solid from '../assets/solid.png';
-import Shad1 from '../assets/shad1.png';
-import Shad2 from '../assets/shad2.png';
-import Shad3 from '../assets/shad3.png';
+import Lin from '../assets/linear2.png'
+
+
 
 
 
@@ -38,64 +35,17 @@ background-repeat: no-repeat;
 
 `
 const Con = styled.div` 
+background-image: url(${Lin});
 
 
 `
 const CandleCon = styled.img`
    
-margin-right: 50px; 
+padding-right: 50px; 
 `
-const Shad2Con = styled.img`
-position: relative;
-left: 240px;
-    width: 125px;
-
-    @media screen and (max-width: 900px){
-left: 40px;
-}
-`
-const Shad3Con = styled.img`
-    width: 120px;
-    position: relative;
-    left:140px;
-
-    @media screen and (max-width: 900px){
-left: -80px;
-}
-    
-`
-const  BlueCon = styled.img`
-height:310px;
-position: relative;
-left: 50px;
-
-@media screen and (max-width: 900px){
-left: -160px;
-}
-`
-const  SolidCon = styled.img`
-height: 340px;
-position: relative;
-right: 80px;
-
-@media screen and (max-width: 900px){
-    top: -350px;
-left: 150px;
-}
-
-`
-const  EtherCon = styled.img`
-z-index: 90;
-height: 220px;
-position: relative;
-left: 170px;
-
-@media screen and (max-width: 900px){
-left: -30px;
-}
 
 
-`
+
 const Ab = styled.div` 
 font-family: Poppins;
 font-style: normal;
