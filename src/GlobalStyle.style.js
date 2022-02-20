@@ -10,10 +10,6 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
    font-family: "Kinn";
    src:local("/Kinn-Bold.otf");
-   src:local("/Kinn-Medium.otf");
-   src:local("/Kinn-Medium.ttf");
-   src:local("/Kinn-Regular.otf");
-   src:local("/Kinn-Regular.ttf");
    /* src: local('Kinn'),url("./assets/fonts/Kinn-Bold.ttf") format("tff");
    src: local('Kinn'),url("./assets/fonts/Kinn-Medium.otf") format("otf");
    src: local('Kinn'),url("./assets/fonts/Kinn-Medium.ttf") format("tff");
@@ -28,8 +24,6 @@ const GlobalStyle = createGlobalStyle`
   body {
   margin: 0;
   font-family: 'Poppins','Kinn' sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: whitesmoke;
 }
 a{
