@@ -9,12 +9,16 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
    font-family: "Kinn";
-   src:local('Kinn'), url("./assets/Kinn-Bold.otf") format("otf");
-   src: local('Kinn'),url("./assets/fonts/Kinn-Bold.ttf") format("tff");
+   src:local("/Kinn-Bold.otf");
+   src:local("/Kinn-Medium.otf");
+   src:local("/Kinn-Medium.ttf");
+   src:local("/Kinn-Regular.otf");
+   src:local("/Kinn-Regular.ttf");
+   /* src: local('Kinn'),url("./assets/fonts/Kinn-Bold.ttf") format("tff");
    src: local('Kinn'),url("./assets/fonts/Kinn-Medium.otf") format("otf");
    src: local('Kinn'),url("./assets/fonts/Kinn-Medium.ttf") format("tff");
    src: local('Kinn'),url("./assets/fonts/Kinn-Regular.otf") format("oft");
-   src: local('Kinn'),url("./assets/fonts/Kinn-Regular.ttf") format("tff");
+   src: local('Kinn'),url("./assets/fonts/Kinn-Regular.ttf") format("tff"); */
 };
   :root{
     --primary-bg:#4500A0;
