@@ -5,6 +5,11 @@ import { Column } from '../GlobalStyle.style';
 export const GetCodeWrapper = styled.div`
   display: flex;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
 `;
 export const GetCodeContainer = styled.div`
   display: flex;
@@ -24,6 +29,12 @@ export const GetCodeContainer = styled.div`
         height: 200px;
         object-fit: contain;
         margin-right: -40px;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 480px) {
       }
     }
     &:last-child {
@@ -31,6 +42,9 @@ export const GetCodeContainer = styled.div`
       align-items: center;
       text-align: center;
     }
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
   }
 `;
 
@@ -60,6 +74,18 @@ export const GetCodeForm = styled.div`
       &:hover {
         color: rgba(0, 0, 0, 0.9);
         transition: all 0.5s ease-in;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      top: -260px;
+      position: relative;
+      right: -135px;
+
+      .icon {
+        font-size: 50px;
+        background: rgba(82, 128, 255, 0.05);
+        color: #fff;
+        border-radius: 50%;
       }
     }
   }

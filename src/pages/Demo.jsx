@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Background from '../components/Background';
 import Button from '../components/Button';
+import Header from '../components/Header';
 import Input from '../components/Input';
 import Modal from '../components/Modal';
 import { Container, Typography } from '../GlobalStyle.style';
@@ -22,20 +23,21 @@ const Demo = () => {
       <Modal open={complete} height="auto" bg="rgba(255,255,255,0.9)">
         <Confirmation setComplete={setComplete} />
       </Modal>
+      <Header />
       <Background>
         <Container>
           <DemoAppContainer>
             <Typography textAlign="center">Continue to App</Typography>
             <div className="form">
-              <Input
+              {/* <Input
                 type="text"
                 placeholder="Enter email"
                 bgColor="rgba(255,255,255,0.9)"
                 textAlign="center"
-              />
+              /> */}
               <Input
                 type="text"
-                placeholder="Enter Test Code"
+                placeholder="Enter test code"
                 bgColor="rgba(255,255,255,0.9)"
                 textAlign="center"
               />
@@ -55,7 +57,7 @@ const Demo = () => {
               color="var(--primary-bg)"
               onClick={() => setOpen(!open)}
             >
-              Get testing code
+              Don't have a test code,click here to get one.
             </Typography>
           </DemoAppContainer>
         </Container>

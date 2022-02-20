@@ -20,10 +20,14 @@ export const ModalContentWrapper = styled(motion.div)`
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin: auto;
-  overflow: hidden;
+
   align-items: center;
   padding: ${(props) => (props.padding ? props.padding : '')};
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const ModalContent = styled(motion.div)`

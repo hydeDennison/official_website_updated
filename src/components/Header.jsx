@@ -14,7 +14,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 `;
 
 const NavbarContainer = styled(Container)`
@@ -75,6 +75,7 @@ const NavMenu = styled.ul`
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
+    z-index: 9999;
     transition: all 0.5s ease;
     background: rgba(255, 255, 255, 1);
   }

@@ -34,4 +34,9 @@ export const DemoAppContainer = styled.div`
   p {
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;

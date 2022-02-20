@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Container } from '../GlobalStyle.style';
 
 export const BackgroundWrapper = styled.section`
   width: 100%;
@@ -6,10 +7,12 @@ export const BackgroundWrapper = styled.section`
   background: rgba(82, 128, 255, 0.05);
   position: relative;
   display: flex;
+  /* z-index: -1; */
   align-items: center;
   .bg {
     position: absolute;
     filter: blur(100px);
+
     &:nth-child(1) {
       background: rgba(82, 128, 255, 0.9);
       width: 400px;
@@ -38,6 +41,13 @@ export const BackgroundWrapper = styled.section`
       height: 30vh;
       right: 680px;
       left: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+    /* z-index: -1; */
+    ${Container} {
+      padding: 0px 10px;
     }
   }
 `;
