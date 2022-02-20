@@ -70,7 +70,8 @@ const NavMenu = styled.ul`
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 50px;
     position: fixed;
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
