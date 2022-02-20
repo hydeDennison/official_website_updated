@@ -7,7 +7,17 @@ export const BackgroundWrapper = styled.section`
   background: rgba(82, 128, 255, 0.05);
   position: relative;
   display: flex;
+  flex-direction: column;
   /* z-index: -1; */
+
+  ${Container} {
+    &:last-child {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   align-items: center;
   .bg {
     position: absolute;

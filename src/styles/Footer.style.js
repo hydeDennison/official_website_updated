@@ -36,6 +36,12 @@ export const FooterWrapper = styled.div`
   @media screen and (max-width: 480px) {
     a {
       font-size: 10px;
+      font-weight: 600;
+      color: #000;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
   }
 `;

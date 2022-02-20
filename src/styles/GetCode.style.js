@@ -41,10 +41,12 @@ export const GetCodeContainer = styled.div`
       justify-content: center;
       align-items: center;
       text-align: center;
+      width: 100%;
     }
   }
   @media screen and (max-width: 480px) {
     flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -58,6 +60,11 @@ export const GetCodeForm = styled.div`
   input {
     margin: 10px 0;
     font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    input {
+      text-align: center;
+    }
   }
   button {
     margin-top: 10px;

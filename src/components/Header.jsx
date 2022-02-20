@@ -22,24 +22,30 @@ const NavbarContainer = styled(Container)`
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  transition: all 0.3s ease;
   //Galaxy S9/S9+ 360x740 || iPhone 8, 7, 6S, 6 375x667
   @media screen and (min-width: 320px) and (max-width: 375px) {
-    background: #fff;
+    &.scrolled {
+      background: #fff;
+    }
     position: fixed;
   }
   // 393x786 411x731 414x736
   @media screen and (min-width: 376px) and (max-width: 480px) {
-    background: #fff;
+    &.scrolled {
+      background: #fff;
+    }
     position: fixed;
   }
   //iPad 768x1024
   @media screen and (min-width: 481px) and (max-width: 768px) {
-    background: #fff;
-    border-bottom: 1px solid #ccc;
+    &.scrolled {
+      background: #fff;
+    }
     position: fixed;
   }
 `;
-const NavLogo = styled.div`
+export const NavLogo = styled.div`
   margin-top: 10px;
   @media screen and (min-width: 481px) and (max-width: 768px) {
     padding-left: 20px;
@@ -116,10 +122,16 @@ const NavItem = styled.li`
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset <= 80 ? false : true);
+    return () => (window.onscroll = null);
+  };
   return (
     <>
       <Nav>
-        <NavbarContainer>
+        <NavbarContainer className={isScrolled ? 'scrolled' : ''}>
           <NavLogo>
             <Link to="/">
               <Image src={Logo} alt="logo" />
